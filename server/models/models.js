@@ -46,7 +46,7 @@ const DeviceInfo = sequelize.define("device_info", {
 });
 
 const TypeBrand = sequelize.define("type_brand", {
-  id: { type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true },
+  id: { type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true }, // промежуточная модель для многие ко многим
 });
 
 User.hasOne(Basket);

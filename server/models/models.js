@@ -55,7 +55,7 @@ Basket.belongsTo(User);
 User.hasMany(Rating);
 Rating.belongsTo(User);
 
-Basket.hasOne(BasketDevice);
+Basket.hasMany(BasketDevice);
 BasketDevice.belongsTo(Basket);
 
 Type.hasMany(Device);
